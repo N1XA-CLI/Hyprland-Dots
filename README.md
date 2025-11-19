@@ -4,5 +4,5 @@ This is a minimal Hyprland Setup, based on Arch linux(Recommended: Arch Minimal)
 # Setup of dotfiles.
 
     ## Installation(Assumming you have Arch linux minimal):
-        ### • Automatic Installation
+        <!-- ### • Automatic Installation -->
             
