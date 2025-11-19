@@ -19,12 +19,12 @@ Information about Hyprland can be scattered across many sources, which can be co
  ## Installation(Assumming you have Arch linux minimal):
   ## • Automated Installation
    1. Clone this repository in your home folder:
-       'git clone https://github.com/gaurav23b/simple-hyprland.git ~/simple-hyprland'
-        2. Navigate to the folder to install:
-            'cd ~/simple-hyprland/scripts/installer'
-        3. Run the installer script with sudo:
-            'sudo sh install.sh'
-        **Features of this scipt:**
+       ### git clone https://github.com/gaurav23b/simple-hyprland.git ~/simple-hyprland
+    2. Navigate to the folder to install:
+        ### cd ~/simple-hyprland/scripts/installer
+    3. Run the installer script with sudo:
+        ### sudo sh install.sh
+    **Features of this scipt:**
         • This script is user-centric and allows you to choose which components to install (Everything is asked, even for the core).
         • While the script offers flexibility, it is recommend to installing all components for the best experience, as this is already a minimal setup.
         • The installation process follows the same flow as the documentation, ensuring a structured and educational approach.
