@@ -1,0 +1,112 @@
+@import "/home/levi/.config/waybar/wallust/waybar.css";
+/* Global */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Bar Background */
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: @foreground;
+
+
+}
+/* Workspaces */
+#workspaces button {
+    padding: 5px;
+    color: @color8; /* muted grey-ish */
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: @color7;
+}
+
+#workspaces button.focused {
+    color: @foreground;
+    background: @color4;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: @background;
+    background: @color2;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: @color7;
+    color: @background;
+    border-radius: 10px;
+}
+
+/* Modules */
+#window,
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#workspaces {
+    background: @color0;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 5px;
+}
+
+/* Workspaces container */
+#workspaces {
+    background: @color0;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+/* CPU/Mem group styling */
+#cpu {
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#memory {
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* Window Title */
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 0px;
+}
+
+/* Clock */
+#clock {
+    color: @color7;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+/* Network */
+#network {
+    color: @color7;
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* Audio */
+#pulseaudio {
+    color: @color7;
+}
+
+#pulseaudio.microphone {
+    color: @color7;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 5px;
+}
