@@ -36,9 +36,9 @@ palette = "harddark16"
 #  2 - 10     Perceptible at a glance.
 #  11 - 49    Colors are more similar than opposite
 #  100        Colors are exact opposite
-threshold = 18
+threshold = 11
 
-
+# "complementary" OR "interpolate"
 fallback_generator = "complementary"
 
 
@@ -66,6 +66,9 @@ waybar.target = '~/.config/waybar/wallust/waybar.css'
 swaync.template = 'colors-swaync.css'
 swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
 
-nvim.template = 'templates/colors-wal.vim'
+nvim.template = 'colors-wal.vim'
 nvim.target = '~/.cache/wal/colors-wal.vim'
+
+tofi.template = 'colors-tofi'
+tofi.target = '~/.config/tofi/wallust/colors-tofi'
 

@@ -1,10 +1,12 @@
 @import '/home/levi/.config/waybar/wallust/waybar.css';
 
+
 /* --------------------------------------------------
    GLOBAL
 -------------------------------------------------- */
 
 * {
+    all: unset; 
     border: none;
     border-radius: 0;
     font-family: JetBrainsMono Nerd Font, monospace;
@@ -13,12 +15,17 @@
     min-height: 0;
 }
 
+tooltip {
+  background: @background;
+  border: 2px solid @foreground;
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: @color7;
+}
 window#waybar {
-    background: transparent;  /* blur-only / no color */
+    background: transparent; /* blur-only / no color */
     color: @foreground;
-    /* Enable to check weather the color changes or not. */
-    /* border: 10px solid @blend; */
-    /* border-radius: 10px; */
 }
 
 
@@ -28,12 +35,12 @@ window#waybar {
 
 #workspaces button {
     padding: 5px;
-    color: @blend2;            /* neutral text */
+    color: @color7;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: @foreground;
+    color: @color14;
 }
 
 #workspaces button.focused {
@@ -52,49 +59,70 @@ window#waybar {
     background: @foreground;  /* hover accent */
     color: @background;
     border-radius: 10px;
+    background: @cursor;
+    /* background: @color1; */
+    /* background: @color14; */
+    /* background: @color13; */
 }
 
 
 /* --------------------------------------------------
    MODULE BACKGROUNDS
 -------------------------------------------------- */
-
-#window,
 #clock,
+#workspaces,
+#window,
+#tray,
+#memory,
+#cpu,
 #pulseaudio,
 #network,
-#cpu,
-#memory,
-#workspaces {
+#idle_inhibitor
+{
     background: @background;
     padding: 0 10px;
     margin: 3px 0;
     margin-top: 5px;
+    color: @color7;
 }
 
 #workspaces {
-    background: @background;
     border-radius: 10px;
     margin-left: 10px;
     padding-left: 5px;
     padding-right: 0;
 }
 
+/* --------------------------------------------------
+   TRAY
+-------------------------------------------------- */
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+#tray menu {
+    font-family: sans-serif;
+}
 
 /* --------------------------------------------------
    CPU + MEMORY
 -------------------------------------------------- */
 
 #cpu {
-    color: @foreground;
-    /* color: @color7; */
     border-radius: 0 10px 10px 0;
     margin-right: 10px;
 }
 
 #memory {
-    color: @foreground;
-    /* color: @color7; */
     border-radius: 10px 0 0 10px;
 }
 
@@ -104,11 +132,17 @@ window#waybar {
 -------------------------------------------------- */
 
 #window {
-    color: @foreground;
-    /* color: @color15; */
     border-radius: 10px;
     margin-left: 60px;
     margin-right: 60px;
+}
+
+/* --------------------------------------------------
+   IDLE INHIBITOR
+-------------------------------------------------- */
+
+#idle_inhibitor {
+    border-radius: 10px 0 0 10px;
 }
 
 
@@ -117,8 +151,6 @@ window#waybar {
 -------------------------------------------------- */
 
 #clock {
-    color: @foreground;
-    /* color: @color15; */
     border-radius: 10px;
     margin-left: 5px;
 }
@@ -129,9 +161,9 @@ window#waybar {
 -------------------------------------------------- */
 
 #network {
-    color: @foreground;
-    /* color: @color15; */
     border-radius: 10px 0 0 10px;
+    border-radius: 0 0 0 0;
+
 }
 
 
@@ -140,17 +172,14 @@ window#waybar {
 -------------------------------------------------- */
 
 #pulseaudio {
-    /* color: @color15; */
-    color: @foreground;
     border-left: 0;
     border-right: 0;
 }
 
 #pulseaudio.microphone {
-    /* color: @color15; */
-    color: @foreground;
     border-radius: 0 10px 10px 0;
     border-left: 0;
     border-right: 0;
     margin-right: 5px;
 }
+
