@@ -19,7 +19,7 @@ Information about Hyprland can be scattered across many sources, which can be co
 ## Installation:
 ## • Automated Installation Script
 #### 1. Clone this repository in your home folder:
-    git clone https://github.com/gaurav23b/simple-hyprland.git ~/simple-hyprland
+    git clone https://github.com/N1XA-CLI/simple-hyprland.git ~/simple-hyprland
 #### 2. Navigate to the folder to install:
     cd ~/simple-hyprland/scripts/installer
 #### 3. Run the installer script with sudo:
