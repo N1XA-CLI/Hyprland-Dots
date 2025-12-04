@@ -33,7 +33,7 @@ Information about Hyprland can be scattered across many sources, which can be co
 
 • Although designed for Arch Linux, users of Arch-based distributions may also find this script helpful.
 
-### For more Details visit this [link](https://github.com/gaurav23b/simple-hyprland?tab=readme-ov-file#getting-started-)
+### For more Details visit this [link](https://github.com/N1XA-CLI/simple-hyprland?tab=readme-ov-file#getting-started-)
 
 
 # Key Bindings 🎹
