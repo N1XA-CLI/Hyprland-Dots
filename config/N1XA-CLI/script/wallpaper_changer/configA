@@ -22,8 +22,8 @@ placeholder-text = "Search wallpaper..."
 prompt-text = " : "
 
 
-include = /home/levi/.cache/wal/colors-tofi
+include = /home/levi/.config/tofi/wallust
 #selection-color = #83A4E7
-background-color = #11111bd9
+background-color = #141418d9
 
 

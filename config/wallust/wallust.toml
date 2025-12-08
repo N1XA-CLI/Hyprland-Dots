@@ -50,7 +50,6 @@ fallback_generator = "complementary"
 # zathura = { template = 'zathura', target = '~/.config/zathura/zathurarc' }
 
 
-
 cava.template = 'colors-cava'
 cava.target = '~/.config/cava/config'
 
@@ -63,12 +62,17 @@ hypr.target = '~/.config/hypr/wallust/colors.conf'
 waybar.template = 'waybar.css'
 waybar.target = '~/.config/waybar/wallust/waybar.css'
 
-swaync.template = 'colors-swaync.css'
-swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
-
 nvim.template = 'colors-wal.vim'
 nvim.target = '~/.cache/wal/colors-wal.vim'
+
+rofi.template = 'colors-rofi.rasi'
+rofi.target = '~/.config/rofi/wallust/colors-rofi.rasi'
 
 tofi.template = 'colors-tofi'
 tofi.target = '~/.config/tofi/wallust/colors-tofi'
 
+wlogout.template = 'colors-wlogout.css'
+wlogout.target = '~/.config/wlogout/wallust/colors-wlogout.css'
+
+swaync.template = 'colors-swaync.css'
+swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
