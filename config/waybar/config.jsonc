@@ -18,6 +18,8 @@
         "memory",
         "cpu",
         "idle_inhibitor",
+        "custom/temperature",
+        "custom/light",
         "network",
         "pulseaudio",
         "pulseaudio#microphone"
@@ -101,6 +103,22 @@
         "tooltip": "true",
         "tooltip-format-activated": "<span foreground='#98c379'>\udb80\udd76 Caffeine Mode Active</span>\nPrevents system from going to sleep",
         "tooltip-format-deactivated": "<span foreground='#e06c75'>\udb81\udeca Caffeine Mode Inactive</span>\nSystem will follow normal power settings"
+    },
+    "custom/light":{
+            "format": "{icon} ",
+            "format-source": "{icon} ",
+            "tooltip": true,
+            "format-icons": ["󰃞"],
+            "on-scroll-up": "bash ~/.config/waybar/scripts/waybar-light-controls/light_control.sh up",
+            "on-scroll-down": "bash ~/.config/waybar/scripts/waybar-light-controls/light_control.sh down"
+    },
+    "custom/temperature":{
+            "format": "{icon} ",
+            "format-source": "{icon} ",
+            "tooltip": true,
+            "format-icons": ["󰃠"],
+            "on-scroll-up": "bash ~/.config/waybar/scripts/waybar-light-controls/temperature_control.sh up",
+            "on-scroll-down": "bash ~/.config/waybar/scripts/waybar-light-controls/temperature_control.sh down"
     },
     "network": {
         "tooltip": true,
