@@ -8,7 +8,8 @@
     "height": 0,
     "modules-left": [
         "clock",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/media"
     ],
     "modules-center": [
         "hyprland/window"
@@ -49,6 +50,20 @@
         "all-outputs": true,
         "on-click": "activate"
         // "format": "{icon}",
+    },
+    "custom/media": {
+    	"exec": "~/.config/waybar/media.sh",
+    	"interval": 1,
+    	"return-type": "string",
+    	"on-click": "playerctl --ignore-player=brave previous",
+    	"on-click-right": "playerctl --ignore-player=brave next",
+    	"on-click-middle": "playerctl --ignore-player=brave play-pause",
+    	"on-scroll-up": "$HOME/.config/hypr/scripts/volume.sh --inc",
+	"on-scroll-down": "$HOME/.config/hypr/scripts/volume.sh --dec",
+    	"tooltip": true,
+    	"tooltip-format": "Left Click: previous ⏮\nMid Click: Pause ⏸\nRight Click: Next ⏭",
+    	"smooth-scrolling-threshold": 1,
+        "max-length": 24
     },
     "hyprland/window": {
         "format": "󰣇 {}",

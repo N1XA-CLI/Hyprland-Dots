@@ -1,5 +1,4 @@
 @import '/home/levi/.config/waybar/wallust/waybar.css';
-/* @import '/home/levi/.cache/hellwal/waybar-colors.css'; */
 
 /* --------------------------------------------------
    GLOBAL
@@ -79,7 +78,8 @@ window#waybar {
 #network,
 #idle_inhibitor,
 #custom-temperature,
-#custom-light
+#custom-light,
+#custom-media
 {
     background: @background;
     padding: 0 10px;
@@ -90,6 +90,13 @@ window#waybar {
 
 #workspaces {
     border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+#custom-media{
+    border-radius: 10px; 
     margin-left: 10px;
     padding-left: 5px;
     padding-right: 0;
