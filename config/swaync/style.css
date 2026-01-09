@@ -1,3 +1,11 @@
+/***
+ *    ┏┓┓ ┏┏┓┓┏┳┓┏┓
+ *    ┗┓┃┃┃┣┫┗┫┃┃┃ 
+ *    ┗┛┗┻┛┛┗┗┛┛┗┗┛
+ *                 
+ */
 
-@import '/home/levi/.config/swaync/themes/nova-dark/notifications.css'; 
-/*@import '~/.config/swaync/themes/central_control.css';*/
+
+@import 'matugen/matugen-swaync.css';
+@import 'themes/matugen-nc/notifications.css';
+@import 'themes/matugen-nc/control-center.css';
